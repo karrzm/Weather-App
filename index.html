@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/65c436d814.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f17604e00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main-app">
+        <div class="col-12"></div>
+        <div class="row city-search">
+          <div class="col-4 current-city">
+            <h1 id="city">Montréal, QC</h1>
+          </div>
+          <div class="col-4">
+            <p id="calendar">
+              October 31
+            </p>
+          </div>
+          <form id="search-bar">
+          <div class="col-4 search-bar" >
+            <div class="input-group">
+              <input
+                id="city-input"
+                type="search"
+                class="form-control rounded"
+                placeholder="Change City..."
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+              <button type="button" class="btn btn-outline-primary">
+                Search
+              </button>
+            </form> <button type="button" class="btn btn-outline-primary" id="button"> Current </button>
+            </div>
+          </div>
+
+          <div class="row current-conditions">
+            <div class="col-6">
+              <h2 class="current-temp">
+                <i class="fas fa-sun sun-icon"></i> 25°c
+                <span id="units"
+                  ><a href="#" id="celsius">°C</a>|<a href="#" id="farenheit"
+                    >°F
+                  </a></span
+                >
+              </h2>
+            </div>
+            <div class="col-6 descriptions">
+              <div class="row short-description">
+                <p>Very sunny. Lots of sun.</p>
+              </div>
+              <div class="row stats">
+                <div class="col-2 statistics">
+                  Wind 30km/hr
+                </div>
+                <div class="col-2 statistics">
+                  Humidity 19%
+                </div>
+                <div class="col-2 statistics">
+                  Visibility 20km
+                </div>
+              </div>
+            </div>
+
+            <div class="row weekdays">
+              <div class="col-sm-2">
+                <div class="card" style="width: 9rem;">
+                  <div class="card-body">
+                    <h3 class="emoji">⛈</h3>
+                    <h5 class="card-title date">Sat</h5>
+                    <p class="saturday-temp">19°c</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card" style="width: 9rem;">
+                  <div class="card-body">
+                    <h3 class="emoji">⛈</h3>
+                    <h5 class="card-title date">Sun</h5>
+                    <p class="sunday-temp">18°c</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card" style="width: 9rem;">
+                  <div class="card-body">
+                    <h3 class="emoji">⛈</h3>
+                    <h5 class="card-title date">Mon</h5>
+                    <p class="monday-temp">15°c</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card" style="width: 9rem;">
+                  <div class="card-body">
+                    <h3 class="emoji">⛈</h3>
+                    <h5 class="card-title date">Tue</h5>
+                    <p class="tuesday-temp">10°c</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card" style="width: 9rem;">
+                  <div class="card-body">
+                    <h3 class="emoji">⛈</h3>
+                    <h5 class="card-title date">Wed</h5>
+                    <p class="wednesday-temp">10°c</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

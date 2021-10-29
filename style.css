@@ -1,0 +1,100 @@
+h1 {
+  position: relative;
+  left: 22px;
+  font-family: "Gemunu Libre", sans-serif;
+  color: #14279b;
+  font-size: 55px;
+}
+a {
+  text-decoration: none;
+  color: #3d56b2;
+}
+
+.main-app {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  background: #e6e6e6;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  bottom: 60px;
+  right: 180px;
+  max-width: 1000px;
+}
+
+.descriptions,
+.card-body,
+#calendar {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #3d56b2;
+  text-align: center;
+}
+
+#calendar {
+  position: relative;
+  top: 20px;
+  right: 65px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+#units {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.current-conditions {
+  position: relative;
+  bottom: 15px;
+}
+.sun-icon {
+  color: #fab005;
+}
+
+.current-temp {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #3d56b2;
+  font-size: 50px;
+  position: relative;
+  top: 45px;
+  left: 100px;
+}
+
+.descriptions {
+  position: relative;
+  right: 90px;
+  top: 35px;
+}
+.short-description {
+  position: relative;
+  top: 2px;
+  left: 35px;
+  font-size: 20px;
+}
+.stats {
+  position: relative;
+  top: 8px;
+  left: 153px;
+  bottom: 5px;
+}
+.statistics {
+  border-top: solid white;
+  border-bottom: solid white;
+  line-height: 35px;
+}
+.card {
+  position: relative;
+  top: 65px;
+  left: 50px;
+  bottom: 80px;
+  box-shadow: 0 8px 6px -6px rgb(151, 151, 151);
+}
+.card-body {
+}
+.date {
+  font-family: "Gemunu Libre", sans-serif;
+}
