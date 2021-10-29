@@ -5,11 +5,18 @@ h1 {
   color: #14279b;
   font-size: 55px;
 }
-a {
+.unit {
   text-decoration: none;
   color: #3d56b2;
 }
-
+.footer {
+  position: relative;
+  top: 600px;
+  font-size: 20px;
+  color: #3d56b2;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+}
 .main-app {
   display: block;
   margin: 0 auto;
@@ -25,7 +32,6 @@ a {
   max-width: 1000px;
 }
 
-.footer,
 .descriptions,
 .card-body,
 #calendar {
